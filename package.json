@@ -17,7 +17,7 @@
     "lint": "prettier --write 'src/**/*.{js,jsx}'",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "build": "rimraf .cache public && gatsby build",
-    "deploy": "bump --tag --push --all && npm run build && s3-deploy './public/**' --cwd './public/' --bucket jpreecedev.com  --deleteRemoved --gzip && npm run clear"
+    "deploy": "bump --tag --push --all && npm run build && s3-deploy './public/**' --cwd './public/' --bucket jpreecedev.com  --deleteRemoved --gzip"
   },
   "dependencies": {
     "gatsby": "^2.15.15",
