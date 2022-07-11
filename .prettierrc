@@ -3,5 +3,8 @@
   "tabWidth": 2,
   "useTabs": false,
   "trailingComma": "none",
-  "semi": false
+  "semi": false,
+  "importOrder": ["^react$", "^next","^clsx$", "<THIRD_PARTY_MODULES>", "^[./]"],
+  "importOrderSortSpecifiers": true,
+  "importOrderGroupNamespaceSpecifiers": true
 }
