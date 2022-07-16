@@ -81,3 +81,5 @@ tsconfig.*.tsbuildinfo
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
+
+out
