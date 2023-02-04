@@ -1,0 +1,105 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="/favicon.png" rel="icon" sizes="32x32" type="image/png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap");
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+  body,
+  html {
+    font-family: "Source Serif Pro", serif;
+    font-size: 16px;
+    background-color: rgb(212 212 212);
+
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  body {
+    margin: var(--spacing-md);
+
+    @media screen and (min-width: 768px) {
+      margin: var(--spacing-xxl);
+    }
+  }
+
+  :root {
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 12px;
+    --spacing-lg: 16px;
+    --spacing-xl: 24px;
+    --spacing-xxl: 32px;
+
+    --border-radius-md: 4px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h2,
+  p {
+    margin-bottom: var(--spacing-md);
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      margin-bottom: var(--spacing-md);
+    }
+  }
+
+  .text-xs {
+    font-size: 0.75rem;
+  }
+
+  .text-sm {
+    font-size: 0.825rem;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+</style>
