@@ -16,5 +16,8 @@
   "devDependencies": {
     "postcss-nesting": "^11.1.0",
     "postcss-preset-env": "^8.0.1"
+  },
+  "engines": {
+    "node": ">=16.x"
   }
 }
