@@ -40,6 +40,11 @@ const { title } = Astro.props;
     @media screen and (min-width: 768px) {
       font-size: 18px;
     }
+
+    @media (prefers-color-scheme: dark) {
+      background-color: #1a120b;
+      color: #e5e5cb;
+    }
   }
 
   body {
@@ -79,6 +84,11 @@ const { title } = Astro.props;
     text-decoration: none;
 
     &:hover {
+      text-decoration: underline;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      color: #d5cea3;
       text-decoration: underline;
     }
   }
