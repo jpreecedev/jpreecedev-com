@@ -10,7 +10,7 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="/favicon.png" rel="icon" sizes="32x32" type="image/png" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
@@ -29,10 +29,10 @@ const { title } = Astro.props;
     --text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
       0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
 
-    font-size: 16px;
+    font-size: 18px;
 
     @media screen and (min-width: 768px) {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 
